@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
           <div>
             <p className="footer-text">
-              © {currentYear} My Portfolio. All rights reserved.
+              © {currentYear} Yong Jin Yit. All rights reserved.
             </p>
           </div>
           <div className="social-links">
@@ -32,7 +32,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:jinyityong@gmail.com"
               className="social-link"
               aria-label="Email"
             >

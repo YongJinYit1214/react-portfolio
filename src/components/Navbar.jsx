@@ -33,7 +33,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              My Portfolio
+              Yong Jin Yit
             </motion.div>
           </Link>
 
