@@ -1,0 +1,213 @@
+import { motion } from 'framer-motion';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: 'Personal Portfolio',
+      description: 'A responsive portfolio website built with React. Features include dark mode, animations, and contact form.',
+      technologies: ['React', 'CSS', 'Framer Motion', 'React Router'],
+      image: 'https://via.placeholder.com/600x400?text=Portfolio+Preview',
+      github: '#',
+      demo: '#',
+      featured: true,
+    },
+    {
+      title: 'Weather Dashboard',
+      description: 'A weather application that displays current weather and forecasts for any location. Uses OpenWeatherMap API for real-time data.',
+      technologies: ['React', 'API Integration', 'CSS', 'JavaScript'],
+      image: 'https://via.placeholder.com/600x400?text=Weather+App+Preview',
+      github: '#',
+      demo: '#',
+      featured: true,
+    },
+    {
+      title: 'Task Manager',
+      description: 'A task management application with features like task creation, categories, due dates, and status tracking.',
+      technologies: ['React', 'Local Storage', 'CSS', 'JavaScript'],
+      image: 'https://via.placeholder.com/600x400?text=Task+Manager+Preview',
+      github: '#',
+      demo: '#',
+      featured: false,
+    },
+    {
+      title: 'E-commerce Product Page',
+      description: 'A responsive product page for an e-commerce site with image gallery, product details, and add-to-cart functionality.',
+      technologies: ['React', 'CSS', 'JavaScript'],
+      image: 'https://via.placeholder.com/600x400?text=E-commerce+Preview',
+      github: '#',
+      demo: '#',
+      featured: false,
+    },
+  ];
+
+  return (
+    <div className="section">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="hero"
+      >
+        <h1 className="hero-title">
+          My Projects
+        </h1>
+        <p className="hero-subtitle">
+          Here are some of the projects I've worked on to showcase my skills and experience
+        </p>
+      </motion.div>
+
+      {/* Featured Projects */}
+      <div className="section">
+        <h2 className="section-title" style={{ textAlign: 'center' }}>
+          Featured Projects
+        </h2>
+        <div className="projects-grid">
+          {projects
+            .filter((project) => project.featured)
+            .map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="project-card"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+                <div className="project-content">
+                  <h3 className="project-title">
+                    {project.title}
+                  </h3>
+                  <p className="project-description">
+                    {project.description}
+                  </p>
+                  <div className="project-tags">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="project-tag"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="project-links">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FaGithub className="project-link-icon" /> Code
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FaExternalLinkAlt className="project-link-icon" /> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+        </div>
+      </div>
+
+      {/* Other Projects */}
+      <div className="section">
+        <h2 className="section-title" style={{ textAlign: 'center' }}>
+          Other Projects
+        </h2>
+        <div className="projects-grid">
+          {projects
+            .filter((project) => !project.featured)
+            .map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="project-card"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+                <div className="project-content">
+                  <h3 className="project-title">
+                    {project.title}
+                  </h3>
+                  <p className="project-description">
+                    {project.description}
+                  </p>
+                  <div className="project-tags">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="project-tag"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="project-links">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FaGithub className="project-link-icon" /> Code
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FaExternalLinkAlt className="project-link-icon" /> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        className="section"
+      >
+        <div className="card" style={{ textAlign: 'center' }}>
+          <h2 className="section-title">
+            Interested in my work?
+          </h2>
+          <p className="section-text">
+            These projects demonstrate my skills in React development. I'm always working on new projects to expand my portfolio.
+          </p>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-primary"
+            style={{ display: 'inline-flex', alignItems: 'center' }}
+          >
+            <FaGithub style={{ marginRight: '0.5rem' }} /> View More on GitHub
+          </a>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default Projects;
