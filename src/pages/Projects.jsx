@@ -8,8 +8,8 @@ const Projects = () => {
       description: 'A responsive portfolio website built with React. Features include dark mode, animations, and contact form.',
       technologies: ['React', 'CSS', 'Framer Motion', 'React Router'],
       image: 'https://via.placeholder.com/600x400?text=Portfolio+Preview',
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/YongJinYit1214/react-portfolio',
+      demo: 'https://yongjinyit1214.github.io/react-portfolio/',
       featured: true,
     },
     {
@@ -196,7 +196,7 @@ const Projects = () => {
             These projects demonstrate my skills in React development. I'm always working on new projects to expand my portfolio.
           </p>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/YongJinYit1214"
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary"

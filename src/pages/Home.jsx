@@ -55,7 +55,7 @@ const Home = () => {
             developers, and contribute to meaningful projects.
           </p>
           <p className="section-text">
-            When I'm not coding, I enjoy [your hobbies/interests] and continuously learning new technologies.
+            When I'm not coding, I enjoy reading, playing basketball, and continuously learning new technologies.
           </p>
         </div>
       </motion.div>
