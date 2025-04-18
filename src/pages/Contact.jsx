@@ -118,7 +118,7 @@ const Contact = () => {
                     href="mailto:your.email@example.com"
                     className="contact-info-value"
                   >
-                    your.email@example.com
+                    jinyityong@gmail.com
                   </a>
                 </div>
               </div>
