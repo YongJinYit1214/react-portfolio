@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
@@ -9,7 +9,6 @@ const Projects = () => {
       technologies: ['React', 'Node.js', 'Express', 'MySQL', 'Material-UI', 'AG Grid', 'Recharts'],
       image: 'https://via.placeholder.com/600x400?text=MySQL+Visualization+Tool',
       github: 'https://github.com/YongJinYit1214/YongJinYit1214-MySql-tool',
-      demo: '#',
       featured: true,
     },
     {
@@ -18,7 +17,6 @@ const Projects = () => {
       technologies: ['React', 'CSS', 'Framer Motion', 'React Router'],
       image: 'https://via.placeholder.com/600x400?text=Portfolio+Preview',
       github: 'https://github.com/YongJinYit1214/react-portfolio',
-      demo: 'https://yongjinyit1214.github.io/react-portfolio/',
       featured: true,
     },
     {
@@ -27,7 +25,6 @@ const Projects = () => {
       technologies: ['React', 'API Integration', 'CSS', 'JavaScript'],
       image: 'https://via.placeholder.com/600x400?text=Weather+App+Preview',
       github: '#',
-      demo: '#',
       featured: false,
     },
   ];
@@ -95,7 +92,7 @@ const Projects = () => {
                     >
                       <FaGithub className="project-link-icon" /> Code
                     </a>
-                    
+
                   </div>
                 </div>
               </motion.div>
@@ -150,7 +147,7 @@ const Projects = () => {
                     >
                       <FaGithub className="project-link-icon" /> Code
                     </a>
-                  
+
                   </div>
                 </div>
               </motion.div>
