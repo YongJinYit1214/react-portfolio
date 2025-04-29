@@ -8,7 +8,7 @@ const Projects = () => {
       description: 'A modern, user-friendly MySQL database management application that enables users to interact with databases without writing SQL queries. Features include visual table management, advanced data grid, and data visualization.',
       technologies: ['React', 'Node.js', 'Express', 'MySQL', 'Material-UI', 'AG Grid', 'Recharts'],
       image: 'https://via.placeholder.com/600x400?text=MySQL+Visualization+Tool',
-      github: '#',
+      github: 'https://github.com/YongJinYit1214/YongJinYit1214-MySql-tool',
       demo: '#',
       featured: true,
     },
@@ -95,14 +95,7 @@ const Projects = () => {
                     >
                       <FaGithub className="project-link-icon" /> Code
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <FaExternalLinkAlt className="project-link-icon" /> Live Demo
-                    </a>
+                    
                   </div>
                 </div>
               </motion.div>
@@ -157,14 +150,7 @@ const Projects = () => {
                     >
                       <FaGithub className="project-link-icon" /> Code
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <FaExternalLinkAlt className="project-link-icon" /> Live Demo
-                    </a>
+                  
                   </div>
                 </div>
               </motion.div>

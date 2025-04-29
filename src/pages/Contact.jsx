@@ -129,7 +129,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-info-content">
                   <p className="contact-info-label">Phone</p>
-                  <p className="contact-info-value">+1 (123) 456-7890</p>
+                  <p className="contact-info-value">+60 108766925</p>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-info-content">
                   <p className="contact-info-label">Location</p>
-                  <p className="contact-info-value">Your City, State, Country</p>
+                  <p className="contact-info-value">Puchong Jaya, Selangor, Malaysia</p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ const Contact = () => {
               </h3>
               <div className="contact-social-links">
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/yong-jin-yit-608a76360"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-social-link linkedin"
@@ -159,7 +159,7 @@ const Contact = () => {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/YongJinYit1214"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-social-link github"
