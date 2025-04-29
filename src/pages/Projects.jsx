@@ -4,6 +4,15 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
+      title: 'MySQL Visualization Tool',
+      description: 'A modern, user-friendly MySQL database management application that enables users to interact with databases without writing SQL queries. Features include visual table management, advanced data grid, and data visualization.',
+      technologies: ['React', 'Node.js', 'Express', 'MySQL', 'Material-UI', 'AG Grid', 'Recharts'],
+      image: 'https://via.placeholder.com/600x400?text=MySQL+Visualization+Tool',
+      github: '#',
+      demo: '#',
+      featured: true,
+    },
+    {
       title: 'Personal Portfolio',
       description: 'A responsive portfolio website built with React. Features include dark mode, animations, and contact form.',
       technologies: ['React', 'CSS', 'Framer Motion', 'React Router'],
@@ -17,24 +26,6 @@ const Projects = () => {
       description: 'A weather application that displays current weather and forecasts for any location. Uses OpenWeatherMap API for real-time data.',
       technologies: ['React', 'API Integration', 'CSS', 'JavaScript'],
       image: 'https://via.placeholder.com/600x400?text=Weather+App+Preview',
-      github: '#',
-      demo: '#',
-      featured: true,
-    },
-    {
-      title: 'Task Manager',
-      description: 'A task management application with features like task creation, categories, due dates, and status tracking.',
-      technologies: ['React', 'Local Storage', 'CSS', 'JavaScript'],
-      image: 'https://via.placeholder.com/600x400?text=Task+Manager+Preview',
-      github: '#',
-      demo: '#',
-      featured: false,
-    },
-    {
-      title: 'E-commerce Product Page',
-      description: 'A responsive product page for an e-commerce site with image gallery, product details, and add-to-cart functionality.',
-      technologies: ['React', 'CSS', 'JavaScript'],
-      image: 'https://via.placeholder.com/600x400?text=E-commerce+Preview',
       github: '#',
       demo: '#',
       featured: false,
